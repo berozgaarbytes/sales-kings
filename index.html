@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Kings - India's Sales Network</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+            background: #f8f9fa;
+        }
+
+        header {
+            background: #ff4500;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            width: 120px;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #ff4500;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #ff4500;
+            color: white;
+        }
+
+        .hero {
+            height: 50vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('/home/mihir/Downloads/1.png') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff4500;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255,69,0,0.3);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        .faq-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                height: 40vh;
+            }
+            
+            .cta-button {
+                display: block;
+                margin: 1rem auto;
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/home/mihir/Downloads/8.png" alt="Sales Kings Logo" class="logo">
+        <h1>Sales Kings</h1>
+        <p>India's Premier Sales Network</p>
+    </header>
+
+    <nav>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#testimonials">Success Stories</a>
+        <a href="#join">Join Now</a>
+        <a href="#faq">FAQs</a>
+    </nav>
+
+    <div class="hero">
+        <div>
+            <h1>Earn 5% Commission on Every Deal</h1>
+            <p>Join India's Fastest Growing Sales Community</p>
+        </div>
+    </div>
+
+    <!-- How It Works -->
+    <div class="container" id="how-it-works">
+        <h2 style="text-align: center; color: #ff4500; margin-bottom: 2rem;">How It Works</h2>
+        <div style="text-align: center;">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScRQm1_cm7R2VFW2NbRNda5yHnvBjvkrVPII8vc7omvRuiGiA/viewform" 
+               class="cta-button" target="_blank">
+               Join as Sales Professional
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXh_8_vomRbu9Kx_McX16FjcQUlYY6UE44FqtqabYqOCRsHQ/viewform" 
+               class="cta-button" target="_blank">
+               Register Your Company
+            </a>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="container" id="testimonials">
+        <h2 style="text-align: center; color: #ff4500; margin-bottom: 2rem;">Success Stories</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>"Generated ₹92 lakh in Mumbai real estate deals through Sales Kings!"</p>
+                <h4 style="color: #ff4500; margin-top: 1rem;">Rahul Mehta, Mumbai</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Found perfect sales partners for our Bengaluru tech startup"</p>
+                <h4 style="color: #ff4500; margin-top: 1rem;">TechHorizon Solutions</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Earned ₹18 lakh commission in first 45 days!"</p>
+                <h4 style="color: #ff4500; margin-top: 1rem;">Priya Sharma, Delhi</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQs -->
+    <div class="container" id="faq">
+        <h2 style="text-align: center; color: #ff4500; margin-bottom: 2rem;">FAQs</h2>
+        <div class="faq-section">
+            <h3>How quickly can I start earning?</h3>
+            <p>Most professionals get their first lead within 72 hours of approval.</p>
+            
+            <h3 style="margin-top: 1.5rem;">Is there any registration fee?</h3>
+            <p>Absolutely free! We only earn when you earn (5% commission on successful deals).</p>
+            
+            <h3 style="margin-top: 1.5rem;">Which industries do you support?</h3>
+            <p>All major sectors - Real Estate, IT, Manufacturing, Healthcare, E-commerce, and more.</p>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>📞 +91 63615 22499 | 📧 support@saleskings.in</p>
+        <p style="margin-top: 1rem;">© 2024 Sales Kings | Proudly Made in India</p>
+    </footer>
+</body>
+</html>
